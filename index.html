@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Patients</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <!-- Patient Info Section -->
+      <section class="patient-info">
+        <h1 id="patient-name" class="patient-name">Patient Name</h1>
+        <p id="patient-age">Age: <span></span></p>
+        <p id="patient-email">Email: <span></span></p>
+        <p id="patient-phone">Phone: <span></span></p>
+      </section>
+
+      <!-- Blood Pressure Chart -->
+      <section class="chart-section">
+        <h2>Blood Pressure Over Time</h2>
+        <canvas id="bloodPressureChart" width="400" height="200"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <!-- External JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
